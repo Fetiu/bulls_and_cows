@@ -14,7 +14,7 @@ def strike_check(pn_list,cn_list):
 				else:
 					ball_cnt+=1
 		pn_cnt+=1
-		
+	print('\n')
 	if not(strk_cnt or ball_cnt): print('아웃!') #숫자 하나도 못맞출경우
 	elif strk_cnt==3: print('삼진! 축하합니다!'); return 1
 	else:
@@ -36,8 +36,8 @@ sleep(1)
 while True:
 	i=0
 	loop_cnt+=1
-	print("\n\n~~제", loop_cnt,'회 시작~~\n')
-	if loop_cnt ==3:
+	print("\n\n~제", loop_cnt,'회 시작~\n')
+	if loop_cnt >=3:
 		print('(힌트: 세 수의 합은',sum(cn_list),')\n')
 	#print(cn_list,'\n')
 	while i!=3:
@@ -47,4 +47,3 @@ while True:
 		
 	if strike_check(pn_list,cn_list):
 		break	
-
