@@ -36,7 +36,7 @@ sleep(1)
 while True:
 	i=0
 	loop_cnt+=1
-	print("\n\n~~제", loop_cnt,'회 시작~~')
+	print("\n\n~~제", loop_cnt,'회 시작~~\n')
 	if loop_cnt ==3:
 		print('(힌트: 세 수의 합은',sum(cn_list),')\n')
 	#print(cn_list,'\n')
